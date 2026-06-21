@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SemkaMes</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <div class="header__logo">
+        <span class="logo-icon">💬</span>
+        <span class="logo-text">SemkaMes</span>
+      </div>
+      <nav class="header__nav">
+        <a href="/" class="nav-link active">Мессенджер</a>
+        <a href="/news" class="nav-link">Новости</a>
+        <a href="#" class="nav-link">Друзья</a>
+      </nav>
+      <div class="header__user">
+        <span class="user-avatar">👤</span>
+        <span class="user-name">Стариков Семён</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container main__grid">
+      <section class="dialogs">
+        <div class="dialogs__header">
+          <h2>Диалоги</h2>
+          <button class="btn btn--primary btn--new-msg" id="newChatBtn">➕</button>
+        </div>
+        <div class="dialogs__search">
+          <input type="text" placeholder="Поиск..." id="searchDialog" />
+        </div>
+        <ul class="dialogs__list" id="dialogList"></ul>
+      </section>
+
+      <section class="chat">
+        <div class="chat__header" id="chatHeader">
+          <div class="chat__user">
+            <span class="chat__avatar">👤</span>
+            <span class="chat__name" id="chatUserName">Выберите диалог</span>
+          </div>
+          <div class="chat__actions">
+            <button class="btn btn--icon">⚙️</button>
+          </div>
+        </div>
+
+        <div class="chat__messages" id="messagesContainer">
+          <div class="message-placeholder">
+            <p>👋 Начните общение, выберите диалог слева</p>
+          </div>
+        </div>
+
+        <div class="chat__input">
+          <button class="btn btn--icon" id="attachBtn">📎</button>
+          <input type="text" placeholder="Сообщение..." id="messageInput" />
+          <button class="btn btn--primary" id="sendBtn">Отправить</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>
